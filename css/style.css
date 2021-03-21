@@ -1,0 +1,112 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+body
+{
+	height: 500px;
+	background: #333;
+	display: flex;
+	justify-content: center;
+}
+.calc
+{
+	width: 213px;
+	height: 286px;
+	background: linear-gradient(to bottom, #eff2f9, #d5dfeb);
+}
+.calc .calc__menu
+{
+	width: 100%;
+	height: 18px;
+	background: linear-gradient(to bottom, #eff2f9, #dfe3ec);
+	padding-left: 7px;
+	box-sizing: border-box;
+	display:flex;
+	justify-content: flex-start;
+	border-bottom: 1px solid #b9bec1;
+	font-family: 'Roboto Mono', Monospace; 
+}
+
+.calc .text-menu
+{
+	padding-right: 14px;
+	font-size: 0.81em;
+	cursor:pointer;
+}
+.calc .text-menu::first-letter
+{
+	text-decoration: underline;
+}
+.calc .text-menu:hover
+{
+	color: blue;
+}
+.calc .body-calc /*создано после занятия*/
+{
+	width: 100%;
+	background: linear-gradient(to bottom, #eff2f9, #dfe3ec);
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+.input-field /* создано после занятия. почему при width: 100% выходит за границу*/
+{
+	padding-top: 21px;
+	text-align: right;
+	background: linear-gradient(to bottom, #dfe3ec, white);
+	box-sizing: border-box; 
+	width: 187px; /*189px = 89%*/
+	height: 49px; /*49px = 17%*  почему при установки % не меняется размер*/
+	border-radius: 4%;
+	border: 1px solid #979ca2;
+	margin-top: 11px;
+}
+
+.table /*создано после занятия. Необходимо ли здесь указывать .Calc Нет!!!*/
+{
+	width: 188px;
+	height: 187px;
+	margin-top: 5px;  
+}
+td
+{
+	margin: 2.5px;
+}
+.table .table__button, .table .table__button_zero, .table .table__button_equally
+{
+	border: 1px solid #8d95a0;
+	border-radius: 9%;
+	background: linear-gradient(to bottom, #eff2f9, #dfe3ec);
+	font-family: 'Roboto Mono', Monospace;
+	text-align: center;
+	cursor: pointer;
+	margin-right: 3px;
+	margin-bottom: 6px;
+}
+.table .table__button:hover, .table .table__button_zero:hover, .table .table__button_equally:hover
+{
+	background: linear-gradient(to bottom, #dfe3ec, #eff2f9);
+}
+
+.table__button /*есть ли другой способ установления размеров кнопки*/
+{
+	width: 33px;
+	height: 26px;
+}
+.table__button_zero
+{
+	width: 72px;
+	height: 26px;
+}
+.table__button_equally
+{
+	width: 33px;
+	height: 58px;
+}
