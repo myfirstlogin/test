@@ -1,7 +1,7 @@
 let memory = 0, 
 operation = [],
 resulte = 0,
-action = 0,
+action = 0, //Для чего нужна эта переменная?
 indexNumber = 0; 
 function qS (selector){
 	/*возвращает элемент по указанному селектору*/
